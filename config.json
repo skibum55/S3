@@ -5,16 +5,19 @@
         "ap-southeast-1": ["s3.ap-southeast-1.amazonaws.com"],
         "ap-southeast-2": ["s3.ap-southeast-2.amazonaws.com"],
         "eu-central-1": ["s3.eu-central-1.amazonaws.com",
-                         "s3.eu.central-1.amazonaws.com"],
+            "s3.eu.central-1.amazonaws.com"
+        ],
         "eu-west-1": ["s3.eu-west-1.amazonaws.com"],
         "sa-east-1": ["s3.sa-east-1.amazonaws.com"],
         "us-east-1": ["s3.amazonaws.com",
-                      "s3-external-1.amazonaws.com",
-                      "s3.us-east-1.amazonaws.com"],
+            "s3-external-1.amazonaws.com",
+            "s3.us-east-1.amazonaws.com"
+        ],
         "us-west-1": ["s3.us-west-1.amazonaws.com"],
         "us-west-2": ["s3-us-west-2.amazonaws.com"],
         "us-gov-west-1": ["s3-us-gov-west-1.amazonaws.com",
-                          "s3-fips-us-gov-west-1.amazonaws.com"],
+            "s3-fips-us-gov-west-1.amazonaws.com"
+        ],
         "localregion": ["localhost"]
     },
     "sproxyd": {
@@ -31,5 +34,10 @@
     "log": {
         "logLevel": "info",
         "dumpLevel": "error"
+    },
+    "https": {
+        "cert": "/ssl/cert.pem",
+        "key": "/ssl/chain.pem",
+        "ca": "/ssl/privkey.pem"
     }
 }
