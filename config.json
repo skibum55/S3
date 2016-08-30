@@ -1,9 +1,10 @@
 {
     "port": 8000,
     "https": "true",
-    "certpath": "ssl/cert.pem",
-    "keypath": "ssl/chain.pem",
-    "capath": "ssl/privkey.pem",
+    "certFilePaths":{
+    "cert": "ssl/cert.pem",
+    "key": "ssl/chain.pem",
+    "ca": "ssl/privkey.pem"},
     "regions": {
         "ap-northeast-1": ["s3.ap-northeast-1.amazonaws.com"],
         "ap-southeast-1": ["s3.ap-southeast-1.amazonaws.com"],
